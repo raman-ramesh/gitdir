@@ -1,0 +1,317 @@
+with fileinput.input(files=('file1.txt', 'file2.txt')) as f:
+    for line in f:
+        process(line)
+
+
+
+Python is a __ language
+What is a bytcode, Bytecodes are stored in .pyc file
+Types of iterpreters, Cpython, Jython and many more.
+Which type of interpretor will I use very often _python
+Python is casesensitive.
+
+
+Versions of Python :
+should i switch from 2.x to 3.x Python and why.
+Website to download Python progamming language:
+	https://www.python.org/
+
+IDE : ____ development environment.
+Popular IDE: Pycharm community edition.
+	     Why use Pycharm and not Notepad?
+Download link for windows:
+	https://www.jetbrains.com/pycharm/download/#section=windows
+
+
+
+
+Installing Python. 1 step
+	-install the software in "C:\Python\"
+	-The default lib path will be " C:\Python\Lib\"
+	- locate the python installation folder.
+	- check the path variable.
+	- PYTHONPATH is an environment variable which you can set to add additional 
+		directories where python will look for modules and packages. 
+	- Setting up PYTHONPATH env variable
+
+	The default installation of python also has its own IDE called ____
+	check the version on Python that Iam will be working on.
+	You can run multiple _____ of python on the same machine. Why it is needed?
+
+Installing Pycharm, 2 step
+	locate the interpreter.
+Python programming using Pycharm IDE.
+	Get to Know the IDE.
+
+Reserved words in Python.
+- should not used for defining variables, functions , classes etc.
+	False	class	finally	is	return
+	None	continue	for	lambda	try
+	True	def	from	nonlocal	while
+	and	del	global	not	with
+	as	elif	if	or	
+	assert	else	import	pass	 
+	break	except	in	raise
+
+Variables:
+	types:
+	id()
+	type()
+	converting variables
+	i,j = 1,2
+	type conversions
+
+bitwise operators
+https://www.journaldev.com/26737/python-bitwise-operators	
+
+What is buitin functions:
+- they can used just like any other functions 
+	min
+	max
+	dir
+	len
+
+
+Diff Types of Operators ...
+
+	Arithmetic Operator
+
+	Comparison Operator
+
+	Assignment Operator
+
+	Bitwise Operator
+
+	Logical Operator
+		For AND operator – It returns TRUE if both the operands (right side and left side) are true
+		For OR operator- It returns TRUE if either of the operand (right side or left side) is true
+		For NOT operator- returns TRUE if operand is false
+	Membership Operator
+
+	Identity Operator
+
+String Functions:
+	String formatting:
+	String Formatting (%)
+	print ("My name is %s and iam  %d years old!" % ('Vinay', 21))
+
+	%s – string
+	%d – decimal integer
+	%f – float
+
+	format()
+	print("hello {} how are u".format("ramesh"))
+	print('<{0}>{1}</{0}>'.format(tag, msg))
+
+
+
+	--  s.lower(), s.upper() -- returns the lowercase or uppercase version of the string
+	--  s.strip() -- returns a string with whitespace removed from the start and end
+	--  s.isalpha()/s.isdigit()/s.isspace()... -- tests if all the string chars are in the various character classes
+	--  s.startswith('other'), s.endswith('other') -- tests if the string starts or ends with the given other string
+	--  s.find('other') -- searches for the given other string (not a regular expression) within s, and returns the first index where it begins or -1 if not found
+	--  s.replace('old', 'new') -- returns a string where all occurrences of 'old' have been replaced by 'new'
+	--  s.split('delim') -- returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
+	--  s.join(list) -- opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
+
+
+Numeric Functions:
+	math module:
+		math.sqrt(x)
+Data Structures:
+	List
+		create a list:
+			city=["Mumbai","Delhi","Banglore","Hyd"]
+		Accessing a list element:
+			city[]
+			
+		Slicing:
+			city[:]
+		Functions:
+			len(), max(), min()
+			num = [1,2,3,4,5]
+			max(num)
+		Methods:
+			append(), count(), pop(), sort(), remove(), reverse(), insert
+			count the Number of elements:
+			city.count("Delhi")
+			city.sort()
+	Tuple
+		Creating an empty tuple
+			city=____
+			verfiy if it is an tuple
+			Is there any use creating an empty tuple		
+
+		Creating a tuple and assigning values to a tuple
+			city = ("Mumbai","Delhi","Banglore")
+
+		Packing & Unpacking
+			city = ("Mumbai","Delhi","Banglore")
+			() = city
+			print ()
+		Referencing:
+			print(city[])		
+		
+		Adding data to tuple:
+		Modifying data in a tuple:
+
+		Count & Index:
+			city.count("cityName")
+			city.index()
+
+		Converting a tuple to a List.
+			lst = ___(city)
+		Deleting a tuple
+			del(city)
+		
+	Dictionary
+		uses key-pair method of storage.
+		No duplicate keys allowed. Add a duplicate key.
+	
+		Appending to a dictionary.
+		serverlist["Key"]=""
+		
+		serverlist.clear()
+
+		serverlist.keys()
+		serverlist.values()
+
+		serverlist["keys"]	
+		
+		check the if keys exists.
+		"win2016mum" in serverlist
+	
+
+		serverlist={"win2016mum":"10.1.1.1","centos7":"172.168.10.1","centos7hyd":"10.1.1.5","redhat01":"10.1.1.6"}
+		Try:
+			country_capital = ['India', {'capital': 'New Delhi'}, 'USA', {'capital': 'Washington'}, 'Srilanka', {'capital': 'Colombo'}]
+			print the Country & Capital together.
+	Sets		
+		fruits = set(["apple","orange","grapes","melon","grapes"])
+		fruits2 = set(["apple","strawberry","banana","grapes"])		
+
+		fruits.add("watermelon") – adding to set.
+
+		union:
+		print( fruits | fruits2)
+	    
+		Intersection:
+		print( fruits & fruits2)
+		
+		Difference
+		(what is in fruits that is not in fruits2)
+		print( fruits - fruits2)
+
+		(vice-versa)
+		print( fruits2 - fruits)
+
+	Programming constructs:
+		
+		if	
+				input = xxxput("Enter Name ")
+
+					if input == 'Ram':
+						print ("Name is Correct")
+					else:
+						print ("Name not Correct")
+
+
+		if .. else
+
+		if .. elif
+					a=55
+					if(a<50):
+					    print('Less than 50')
+					elif(a>60):
+					    print('Greater than 60')
+					else:
+					    print('In between 50 and 60')
+		
+		nested if:
+			if .. Elif .. else  
+
+		if (True)
+				a = 10
+				if a:
+				   print ("value found")
+			
+		range() 
+
+			 for i in range(10):
+				print(i)
+
+			 for i in range(1,10):
+				print(i)
+
+		for
+			for iterating_variable in sequence:
+			statements
+		while 
+			while condition:
+			statement
+		
+		while True
+
+		break:
+		continue:
+	
+	Executing Python code from command line:
+
+
+	Files IO:
+		
+		Open a File to Read and read contents:	
+			file = open("MyFile.txt", "r")
+			print (file.read())
+			file.close()
+
+		Open a File to Write and write contents:
+			file = open("MyFile.txt", "w")
+			file.write("This is my first line")
+			file.write("This is my another line")
+			file.close()	
+
+		Appending to a files		
+
+		Read only LINES.
+		Read some characters from a specific location.
+		Using "with" 
+		
+		with open('output.txt', 'w') as file:  
+		    file.write('Hi there!')
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		switch:
+			def switch_demo(argument):
+    				switcher = {
+        1: "January",
+        2: "February",
+        3: "March",
+        4: "April",
+        5: "May",
+        6: "June",
+        7: "July",
+        8: "August",
+        9: "September",
+        10: "October",
+        11: "November",
+        12: "December"
+    }
+    print switcher.get(argument, "Invalid month")	
